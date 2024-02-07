@@ -122,7 +122,30 @@ p {
     }
 
     .first-block-image {
+        display: block;
         order: 1;
         flex-shrink: 0;
+        width: 300px;
+    }
+
+    .content-area {
+        order: 2;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-item-list, .registration-area {
+        display: none;
+    }
+
+    .burger {
+        background-image: url(assets/icons/Burger.svg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        fill: white;
+        width: 32px;
+        height: 32px;
     }
 }
