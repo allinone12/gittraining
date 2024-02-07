@@ -1,0 +1,112 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.h1 {
+    font-size: 3.5rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: rgba(217, 217, 217, 0.84);
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: rgb(0, 89, 255);
+    border-radius: 35px;
+    padding: 10px 35px;
+}
+
+.header-item-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-list-link, .header-list-item, .registration-list-item-link, .registration-list-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+.registration-area, .registration-list {
+    display: flex;
+    gap: 20px;
+}
+
+.log-in, .reg {
+    cursor: pointer;
+}
+
+.log-in::before {
+    background-image: url(assets/icons/log-in.svg);
+    fill: white;
+    height: 16px;
+    width: 16px;
+}
+
+.reg::before {
+    background-image: url(assets/icons/log-in.svg);
+    width: 16px;
+    height: 16px;
+}
+
+.first-block {
+    display: flex;
+    margin-top: 15px;
+    background-color: rgb(25, 25, 25);
+    height: 80vh;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    gap: 20px;
+
+}
+
+.first-block-image {
+    flex: 1;
+    height: 60vmin;
+    background-image: url(assets/images/Black\ 22.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.first-block-button {
+    background-color: rgb(0, 89, 255);
+    color: white;
+    padding: 12px 36px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.397);
+}
