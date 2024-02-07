@@ -10,7 +10,7 @@ body {
 }
 
 .h1 {
-    font-size: 3.5rem;
+    font-size: 5vmin;
     color: white;
     padding: 0;
     margin: 0;
@@ -18,7 +18,8 @@ body {
 
 p {
     color: rgba(217, 217, 217, 0.84);
-    font-size: 1.5rem;
+    font-size: 2vmin;
+    line-height: 140%;
 }
 
 .container {
@@ -87,26 +88,41 @@ p {
     flex-direction: column;
     align-items: flex-start;
     flex: 1;
-    gap: 20px;
+    gap: 15px;
 
 }
 
 .first-block-image {
-    flex: 1;
+    flex: 2;
     height: 60vmin;
     background-image: url(assets/images/Black\ 22.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 
 }
 
 .first-block-button {
     background-color: rgb(0, 89, 255);
     color: white;
-    padding: 12px 36px;
+    padding: 16px 46px;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.397);
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .first-block, .content-area {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .first-block-image {
+        order: 1;
+        flex-shrink: 0;
+    }
 }
